@@ -60,3 +60,14 @@ git commit -m "feat: Add LoadCSVShots and NormalizeShotstoUV to UShotDataLoader"
 git add Source/NHLShotTracking/HeatMapGenerator.cpp Source/NHLShotTracking/HeatMapGenerator.h
 git commit -m "feat: Add UHeatMapGenerator class"
 ```
+
+## 2025-08-21_17-45-00 - Add AHeatMapDisplayActor class
+- **Branch:** main
+- **Commit:** 3a96201
+
+```powershell
+# wrote file Source/NHLShotTracking/HeatMapDisplayActor.h
+# wrote file Source/NHLShotTracking/HeatMapDisplayActor.cpp
+git add Source/NHLShotTracking/HeatMapDisplayActor.cpp Source/NHLShotTracking/HeatMapDisplayActor.h
+git commit -m "feat: Add AHeatMapDisplayActor class"
+```
