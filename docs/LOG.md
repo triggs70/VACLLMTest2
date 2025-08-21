@@ -16,3 +16,14 @@ git branch -M main
 copy nhl-shots-sample.csv Data\shots.csv
 # Summary generation commands were also run
 ```
+
+## 2025-08-21_17-25-00 - Add FShotRow USTRUCT
+- **Branch:** main
+- **Commit:** 7979130
+
+```powershell
+# wrote file Source/NHLShotTracking/ShotData.h
+# wrote file Source/NHLShotTracking/ShotData.cpp
+git add .
+git commit -m "feat: Add FShotRow USTRUCT for CSV data"
+```

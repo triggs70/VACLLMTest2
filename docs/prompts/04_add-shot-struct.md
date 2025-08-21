@@ -1,0 +1,1 @@
+Add a new USTRUCT called FShotRow that will hold basic shot info from the CSV file. Fields should include: float X, float Y, bool bIsGoal, int32 Period, FString Team. Make it a BlueprintType and put it in a new header file in the appropriate location, write a cpp file if needed.
