@@ -71,3 +71,13 @@ git commit -m "feat: Add UHeatMapGenerator class"
 git add Source/NHLShotTracking/HeatMapDisplayActor.cpp Source/NHLShotTracking/HeatMapDisplayActor.h
 git commit -m "feat: Add AHeatMapDisplayActor class"
 ```
+
+## 2025-08-21_17-50-00 - Update Build.cs
+- **Branch:** main
+- **Commit:** 2f9a64a
+
+```powershell
+# modified file Source/NHLShotTracking/NHLShotTracking.Build.cs
+git add Source/NHLShotTracking/NHLShotTracking.Build.cs
+git commit -m "build: Add RenderCore, RHI, and Projects to runtime modules"
+```

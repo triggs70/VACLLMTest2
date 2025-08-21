@@ -1,0 +1,1 @@
+Update the runtime Build.cs to include these modules: Core, CoreUObject, Engine, RenderCore, RHI, Projects. Dont add UnrealEd, this runs at runtime.
