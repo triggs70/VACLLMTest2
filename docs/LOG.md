@@ -38,3 +38,14 @@ git commit -m "feat: Add FShotRow USTRUCT for CSV data"
 git add Source/NHLShotTracking/ShotDataLoader.cpp Source/NHLShotTracking/ShotDataLoader.h
 git commit -m "feat: Add UShotDataLoader class"
 ```
+
+## 2025-08-21_17-35-00 - Add LoadCSVShots and NormalizeShotstoUV to UShotDataLoader
+- **Branch:** main
+- **Commit:** 1cf7f7a
+
+```powershell
+# modified file Source/NHLShotTracking/ShotDataLoader.h
+# modified file Source/NHLShotTracking/ShotDataLoader.cpp
+git add Source/NHLShotTracking/ShotDataLoader.cpp Source/NHLShotTracking/ShotDataLoader.h
+git commit -m "feat: Add LoadCSVShots and NormalizeShotstoUV to UShotDataLoader"
+```
