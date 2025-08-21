@@ -27,3 +27,14 @@ copy nhl-shots-sample.csv Data\shots.csv
 git add .
 git commit -m "feat: Add FShotRow USTRUCT for CSV data"
 ```
+
+## 2025-08-21_17-30-00 - Add UShotDataLoader class
+- **Branch:** main
+- **Commit:** 6321665
+
+```powershell
+# wrote file Source/NHLShotTracking/ShotDataLoader.h
+# wrote file Source/NHLShotTracking/ShotDataLoader.cpp
+git add Source/NHLShotTracking/ShotDataLoader.cpp Source/NHLShotTracking/ShotDataLoader.h
+git commit -m "feat: Add UShotDataLoader class"
+```
