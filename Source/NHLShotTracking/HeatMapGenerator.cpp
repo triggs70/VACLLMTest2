@@ -73,19 +73,17 @@ UTexture2D* UHeatMapGenerator::GenerateHeatMap(const TArray<FVector2D>& UVPoints
     UTexture2D* HeatMapTexture = UTexture2D::CreateTransient(Width, Height, PF_B8G8R8A8);
     if (HeatMapTexture)
     {
-        FTexture2DMipMap& Mip = HeatMapTexture->PlatformData->Mips[0];
-        void* Data = Mip.BulkData.Lock(LOCK_READ_WRITE);
-        uint8* PixelData = static_cast<uint8*>(Data);
-
+        TArray<FColor> Pixels;
+        Pixels.AddUninitialized(Width * Height);
         for (int32 i = 0; i < HeatGrid.Num(); ++i)
         {
             uint8 PixelValue = static_cast<uint8>(HeatGrid[i] * 255.0f);
-            PixelData[i * 4 + 0] = PixelValue; // Blue
-            PixelData[i * 4 + 1] = PixelValue; // Green
-            PixelData[i * 4 + 2] = PixelValue; // Red
-            PixelData[i * 4 + 3] = 255;      // Alpha
+            Pixels[i] = FColor(PixelValue, PixelValue, PixelValue, 255);
         }
 
+        FTexture2DMipMap& Mip = HeatMapTexture->GetPlatformData()->Mips[0];
+        void* MipData = Mip.BulkData.Lock(LOCK_READ_WRITE);
+        FMemory::Memcpy(MipData, Pixels.GetData(), Width * Height * sizeof(FColor));
         Mip.BulkData.Unlock();
         HeatMapTexture->UpdateResource();
     }
