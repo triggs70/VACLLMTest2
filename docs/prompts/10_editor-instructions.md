@@ -1,0 +1,1 @@
+Give me a checklist of manual editor steps to test the heatmap.

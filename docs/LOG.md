@@ -82,7 +82,15 @@ git add Source/NHLShotTracking/NHLShotTracking.Build.cs
 git commit -m "build: Add RenderCore, RHI, and Projects to runtime modules"
 ```
 
-## 2025-08-21_17-55-00 - Fix HeatMapGenerator PlatformData access
+## 2025-08-21_17-55-00 - Editor Testing Checklist
+- **Branch:** main
+- **Commit:** (none)
+
+```powershell
+# Gemini-generated text response
+```
+
+## 2025-08-21_18-00-00 - Fix HeatMapGenerator PlatformData access
 - **Branch:** main
 - **Commit:** 77cc820
 
