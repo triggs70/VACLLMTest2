@@ -81,3 +81,13 @@ git commit -m "feat: Add AHeatMapDisplayActor class"
 git add Source/NHLShotTracking/NHLShotTracking.Build.cs
 git commit -m "build: Add RenderCore, RHI, and Projects to runtime modules"
 ```
+
+## 2025-08-21_17-55-00 - Fix HeatMapGenerator PlatformData access
+- **Branch:** main
+- **Commit:** 77cc820
+
+```powershell
+# modified file Source/NHLShotTracking/HeatMapGenerator.cpp
+git add Source/NHLShotTracking/HeatMapGenerator.cpp
+git commit -m "fix: Update HeatMapGenerator to use GetPlatformData"
+```
